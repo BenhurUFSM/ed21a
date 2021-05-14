@@ -1,2 +1,2 @@
 # ed21a
-Estruturas de Dados - UFSM - 1o semestre 2021
+Estruturas de Dados, UFSM, 1o semestre 2021
