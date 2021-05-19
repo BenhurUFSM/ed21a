@@ -39,6 +39,11 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 
 Ver [aqui](https://www.ufsm.br/ementario/disciplinas/elc1066/).
 
+Bibliografia Básica
+
+Estruturas de Dados e Seus Algoritmos - Jayme L. Szwarcfiter e Lilian Markenzon
+
+
 <!--
 ## Material Auxiliar
 -->
