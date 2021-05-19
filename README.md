@@ -27,6 +27,16 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 | ---: | :----: | :--------
 |    1 |  19mai | introdução
 
+## Exercício (revisão de C)
+
+1. Os nomes dos alunos na planilha da disciplina estão em maiúsculas, e eu gostaria que ficassem em minúsculas, que é mais bonito e ocupa menos espaço (visualmente). Selecionando todos os nomes e ctrl-c, ctrl-v em um editor de textos, tem-se os nomes, um por linha, em um arquivo. Faça um programa que lê esse arquivo, converte tudo para minúsculas, grava o resultado em outro arquivo.
+   A conversão deve manter a primeira letra de cada palavra em maiúscula, exceto em "de", "dos" etc.
+   O arquivo deve ser lido completamente para um vetor de linhas, depois alterado, depois os dados devem ser gravados.
+   Cada linha pode ser um vetor de `char` de tamanho constante (o maior nome tem 34 caracteres, acho).
+   O vetor de pode ser de tamanho constante (temos 26 alunos).
+   O programa deve ser dividido em funções. Deve ter no mínimo uma função para converter uma string (recebe um `char *` e altera a string), uma função para ler o arquivo (recebe o nome do arquivo a ler e o vetor a preencher), uma função para gravar o arquivo resultado.
+2. Altere o programa para incluir alocação dinâmica do vetor. Implemente uma função que recebe o nome de um arquivo e retorna o número de linhas que ele contém.
+3. Altere o programa para fazer a alocação dinâmica das strings. O vetor agora será um vetor de `char *`; cada string deve ser alocada com o tamanho exato necessário. Sugiro fazer uma função que recebe um `FILE *` de um arquivo aberto, lê uma linha desse arquivo, aloca memória do tamanho certo para essa linha, copia a linha para essa memória, retorna o `char *` dessa região de memória.
 
 ## Exercícios e trabalhos
 
