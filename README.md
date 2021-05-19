@@ -27,7 +27,7 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 | ---: | :----: | :--------
 |    1 |  19mai | introdução
 
-## Exercício (revisão de C)
+## Exercícios (revisão de C)
 
 1. Os nomes dos alunos na planilha da disciplina estão em maiúsculas, e eu gostaria que ficassem em minúsculas, que é mais bonito e ocupa menos espaço (visualmente). Selecionando todos os nomes e ctrl-c, ctrl-v em um editor de textos, tem-se os nomes, um por linha, em um arquivo. Faça um programa que lê esse arquivo, converte tudo para minúsculas, grava o resultado em outro arquivo.
    A conversão deve manter a primeira letra de cada palavra em maiúscula, exceto em "de", "dos" etc.
