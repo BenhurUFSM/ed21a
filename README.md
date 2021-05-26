@@ -26,6 +26,8 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 |    N |   data | assunto
 | ---: | :----: | :--------
 |    1 |  19mai | introdução
+|    2 |  24mai | revisão de C
+|    3 |  26mai | revisão de C (cont)
 
 ## Exercícios (revisão de C)
 
