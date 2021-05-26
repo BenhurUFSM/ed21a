@@ -27,7 +27,7 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 | ---: | :----: | :--------
 |    1 |  19mai | introdução
 |    2 |  24mai | revisão de C
-|    3 |  26mai | revisão de C (cont)
+|    3 |  26mai | [revisão de C (cont)](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/03.md)
 
 ## Exercícios (revisão de C)
 
@@ -44,7 +44,7 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 
 |     N |    prazo | assunto
 | ----: | -------: | :-----------
-|    t1 |      ASD | ASD
+|    t1 | 31mai1430 | ver [aula 3](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/03.md)
 
 
 ## Ementa
