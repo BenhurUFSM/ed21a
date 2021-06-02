@@ -45,7 +45,7 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 
 |     N |    prazo | assunto
 | ----: | -------: | :-----------
-|    t1 | ~~31mai1430~~ASD | ver [aula 3](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/03.md)
+|    t1 | 9jun10h | ver [aula 3](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/03.md)
 
 
 ## Ementa
