@@ -52,9 +52,15 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 
 Ver [aqui](https://www.ufsm.br/ementario/disciplinas/elc1066/).
 
-Bibliografia Básica
+## Bibliografia
 
-Estruturas de Dados e Seus Algoritmos - Jayme L. Szwarcfiter e Lilian Markenzon
+Os livros abaixo estão disponíveis no [minha biblioteca](https://www.ufsm.br/orgaos-suplementares/biblioteca/e-books-2/), acessível aos alunos da UFSM.
+
+Estruturas de Dados e Seus Algoritmos - Jayme Szwarcfiter e Lilian Markenzon
+
+Estruturas de Dados - Nina Edelweiss e Renata Galante
+
+Estruturas de Dados em C, Uma Abordagem Didática - Sílvio Pereira
 
 
 <!--
