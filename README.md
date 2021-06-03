@@ -29,6 +29,7 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 |    2 |  24mai | revisão de C
 |    3 |  26mai | [revisão de C (cont)](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/03.md)
 |    4 |  31mai | resolução dos exercícios da 03 (a [página](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/03.md) foi alterada).
+|    5 |   2jun | cont. da revisão dos exercícios; tipos abstratos de dados ([TAD](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/05.md))
 
 ## Exercícios (revisão de C)
 
