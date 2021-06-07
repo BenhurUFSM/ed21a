@@ -18,7 +18,7 @@ void m_libera_mesmo(void *ptr, char *funcao, int linha);
 
 // m_realoca -- use em vez de realloc.
 // ela vai coletar as informacoes de alocacao
-#define m_realoca(ptr, nbytes) m_aloca_mesmo(ptr, nbytes, (char *)__func__, __LINE__)
+#define m_realoca(ptr, nbytes) m_realoca_mesmo(ptr, nbytes, (char *)__func__, __LINE__)
 
 // m_libera -- use em vez de free.
 // ela vai coletar informacoes de alocacao
