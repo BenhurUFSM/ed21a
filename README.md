@@ -31,6 +31,7 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 |    4 |  31mai | resolução dos exercícios da 03 (a [página](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/03.md) foi alterada).
 |    5 |   2jun | cont. da revisão dos exercícios; tipos abstratos de dados ([TAD](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/05.md))
 |    6 |   7jun | exemplo de implementação em C do TAD [data](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/06.md)
+|    - |   9jun | jacaré (mas fiz uma [pagininha](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/t1.md) sobre o t1)
 
 ## Exercícios (revisão de C)
 
