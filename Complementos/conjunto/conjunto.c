@@ -49,6 +49,7 @@ static int cj_acha(conjunto cj, cj_t_dado dado)
 void cj_insere(conjunto cj, cj_t_dado dado)
 {
   if (cj_pertence(cj, dado)) return;
+  // FIXME: está silenciosamente ignorando a não inclusão por falta de capacidade
   if (cj->n_itens == MAX) return;
   cj->itens[cj->n_itens++] = dado;
 }
@@ -76,6 +77,7 @@ conjunto cj_uniao(conjunto c1, conjunto c2)
   conjunto u = cj_cria();
   // insere os itens dos dois conjuntos no resultado, um item não é inserido quando já existe,
   // então não serão criadas duplicatas.
+  // tem um bug, ligado a insercao ser ignorada por estar lotado
   for (int i=0; i<c1->n_itens; i++) {
     cj_insere(u, c1->itens[i]);
   }
