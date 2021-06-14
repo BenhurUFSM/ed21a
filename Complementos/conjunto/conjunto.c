@@ -24,6 +24,8 @@ void cj_destroi(conjunto cj)
   free(cj);
 }
 
+// funcao auxiliar para imprimir um conjunto
+// só funciona se o tipo de item for compativel com %d
 static void cj_imprime(conjunto cj)
 {
   for (int i=0; i<cj->n_itens; i++) {
@@ -32,6 +34,8 @@ static void cj_imprime(conjunto cj)
   printf("\n");
 }
 
+// função auxiliar para encontrar um item no conjunto e retornar sua posição (ou -1)
+// só funciona se o tipo do item puder ser comparado com ==
 static int cj_acha(conjunto cj, cj_t_dado dado)
 {
   for (int i=0; i<cj->n_itens; i++) {
