@@ -4,6 +4,9 @@
 
 #define MAX 100
 
+// a estrutura oculta
+// o conjunto está implementado commo um vetor de tamanho fixo e o número atual de elementos
+// FIXME: remover o limite de tamanho, com alocação (e realocação) dinâmica do vetor
 struct conjunto {
   cj_t_dado itens[MAX];
   int n_itens;
@@ -11,7 +14,7 @@ struct conjunto {
 
 conjunto cj_cria(void)
 {
-  conjunto cj = malloc(sizeof *cj);
+  conjunto cj = malloc(sizeof(*cj));
   cj->n_itens = 0;
   return cj;
 }
@@ -31,25 +34,19 @@ static void cj_imprime(conjunto cj)
 
 static int cj_acha(conjunto cj, cj_t_dado dado)
 {
-  //printf("acha %d\n", dado);
-  //cj_imprime(cj);
   for (int i=0; i<cj->n_itens; i++) {
     if (cj->itens[i] == dado) {
-      //printf("%d\n", i);
       return i;
     }
   }
-  //printf("%d\n", -1);
   return -1;
 }
+
 void cj_insere(conjunto cj, cj_t_dado dado)
 {
-  //printf("insere %d %d\n", dado, cj_pertence(cj, dado));
   if (cj_pertence(cj, dado)) return;
   if (cj->n_itens == MAX) return;
   cj->itens[cj->n_itens++] = dado;
-  //cj_imprime(cj);
-  //printf("fim do insere\n");
 }
 
 void cj_remove(conjunto cj, cj_t_dado dado)
@@ -57,10 +54,11 @@ void cj_remove(conjunto cj, cj_t_dado dado)
   int pos = cj_acha(cj, dado);
   if (pos != -1) {
     if (pos != cj->n_itens-1) {
+      // move o último item para a posicao do item removido
       cj->itens[pos] = cj->itens[cj->n_itens-1];
     }
+    cj->n_itens--; // tinha um bug aqui, esta linha estava depois do '}', removia mesmo o que não existia!
   }
-  cj->n_itens--;
 }
 
 bool cj_pertence(conjunto cj, cj_t_dado dado)
@@ -72,6 +70,8 @@ bool cj_pertence(conjunto cj, cj_t_dado dado)
 conjunto cj_uniao(conjunto c1, conjunto c2)
 {
   conjunto u = cj_cria();
+  // insere os itens dos dois conjuntos no resultado, um item não é inserido quando já existe,
+  // então não serão criadas duplicatas.
   for (int i=0; i<c1->n_itens; i++) {
     cj_insere(u, c1->itens[i]);
   }
@@ -80,18 +80,16 @@ conjunto cj_uniao(conjunto c1, conjunto c2)
   }
   return u;
 }
+
 conjunto cj_intersecao(conjunto c1, conjunto c2)
 {
   conjunto u = cj_cria();
+  // insere os itens de c1 que pertencem a c2
   for (int i=0; i<c1->n_itens; i++) {
     if (cj_pertence(c2, c1->itens[i])) {
       cj_insere(u, c1->itens[i]);
     }
   }
-  //printf("intersecao\n");
-  //cj_imprime(c1);
-  //cj_imprime(c2);
-  //cj_imprime(u);
   return u;
 }
 
