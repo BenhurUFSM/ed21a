@@ -3,6 +3,9 @@
 
 conjunto le_conjunto_de_arquivo(FILE *arq)
 {
+  // retorna um conjunto lido de um arquivo já aberto
+  // o conjunto termina quando não conseguir converter a entrada em int
+  // (FIXME: um tanto gambiarrento)
   conjunto cj = cj_cria();
   int n;
   while (fscanf(arq, "%d", &n) == 1) {
@@ -12,6 +15,7 @@ conjunto le_conjunto_de_arquivo(FILE *arq)
 }
 conjunto le_conjunto(char *nome)
 {
+  // retorna um conjunto lido do início de um arquivo com nome dado
   FILE *arq;
   arq = fopen(nome, "r");
   conjunto cj = le_conjunto_de_arquivo(arq);
@@ -21,6 +25,8 @@ conjunto le_conjunto(char *nome)
 
 conjunto proxima_aposta(FILE *arq)
 {
+  // lê o próximo conjunto de um arquivo
+  // (FIXME: gambiarra, os conjuntos são separados por '.', terminam por 'F')
   int c = fgetc(arq);
   if (c == 'F') {
     return NULL;
