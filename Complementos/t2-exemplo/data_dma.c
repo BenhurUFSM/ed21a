@@ -10,7 +10,8 @@ struct data {
     int ano;
 };
 
-#include "aux_data.c" // funções comuns às duas implementações
+// inclui funções auxiliares comuns às duas implementações
+#include "aux_data.c"
 
 data dt_cria(int d, int m, int a)
 {
@@ -57,6 +58,7 @@ int dt_dia_semana(data d)
     return r;
 }
 
+// incrementa um dia na data
 static void amanha(data d)
 {
   d->dia++;
@@ -70,6 +72,7 @@ static void amanha(data d)
   }
 }
 
+// decrementa um dia da data
 static void ontem(data d)
 {
   d->dia--;
@@ -83,6 +86,7 @@ static void ontem(data d)
   }
 }
 
+// retorna negativo se d1<d2, 0 se ==, positivo se d1>d2
 static int dt_compara(data d1, data d2)
 {
   if (d1->ano != d2->ano) return d1->ano - d2->ano;
@@ -92,6 +96,7 @@ static int dt_compara(data d1, data d2)
 
 int dt_dias_entre_datas(data d1, data d2)
 {
+    // inicia em d1, viaja no tempo até d2, contando os dias
     int dias = 0;
     data dt = dt_cria(d1->dia, d1->mes, d1->ano);
     while (dt_compara(dt, d2) < 0) {
@@ -108,6 +113,7 @@ int dt_dias_entre_datas(data d1, data d2)
 
 data dt_soma_data(data d, int dias)
 {
+    // inicia com a data d, viaja no tempo tantos dias, pro passado ou pro futuro
     data dt = dt_cria(d->dia, d->mes, d->ano);
     while (dias < 0) {
       ontem(dt);
