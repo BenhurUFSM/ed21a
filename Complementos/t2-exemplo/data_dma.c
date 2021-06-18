@@ -53,6 +53,7 @@ int dt_dia_semana(data d)
     struct data d1 = {1, 1, 1900}; // segunda
     int nd = dt_dias_entre_datas(&d1, d);
     int r = nd % 7;
+    // FIXME: arrumar para os negativos
     r = r+2; // para ser segunda quando o resto for 0
     if (r>7) r -= 7;  // para domingo ser 1
     return r;
