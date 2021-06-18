@@ -87,8 +87,20 @@ int dt_ano(data dt)
 int dt_dia_semana(data d)
 {
     // 1/1/2000 (dia 0) foi sábado
+    // o calculo vai ser assim:
+    // data     d2000   %7  +7
+    // 25/12/1999  -7    0   7
+    // 26/12/1999  -6   -6   1
+    // ...
+    // 30/12/1999  -2   -2   5
+    // 31/12/1999  -1   -1   6
+    // 01/01/2000   0    0   7
+    // 02/01/2000   1    1
+    // 03/01/2000   2    2
+    // ...
+    // 08/01/2000   7    0   7
     int r = d->d2000 % 7;
-    if (r<1) r += 7;  // para sábado ser 7
+    if (r<1) r += 7;  // para sábado ser 7, e corrigir os negativos
     return r;
 }
 
