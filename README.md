@@ -41,7 +41,7 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 |     N |    prazo | assunto
 | ----: | -------: | :-----------
 |    t1 | 9jun10h | ver [aula 3](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/03.md)
-|    t2 | 17jun10h | ver [aula 6](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/06.md)
+|    t2 | 17jun10h | ver [aula 6](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/06.md) - exemplo de implementação nos complementos
 
 
 ## Ementa
