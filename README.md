@@ -35,6 +35,7 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 |    7 |  14jun | [Introdução às estruturas de dados](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/07.md)
 |    8 |  16jun | [lista encadeada](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/08.md)
 |    9 |  21jun | [lista encadeada, cont](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/09.md)
+|   10 |  23jun | [pilha, fila, deque](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/10.md)
 
 
 ## Exercícios e trabalhos
