@@ -38,6 +38,8 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 |   10 |  23jun | [pilha, fila, deque](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/10.md)
 |   11 |  28jun | [dicionário, tabela *hash*](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/11.md)
 |   12 |  30jun | [matriz](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/12.md)
+|   13 |   5jul | [árvore](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/13.md)
+|   14 |   7jul | [árvore binária de busca](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/14.md)
 
 
 ## Exercícios e trabalhos
