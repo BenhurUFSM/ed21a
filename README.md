@@ -40,6 +40,7 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 |   12 |  30jun | [matriz](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/12.md)
 |   13 |   5jul | [árvore](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/13.md)
 |   14 |   7jul | [árvore binária de busca](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/14.md)
+|   15 |  12jul | [árvore AVL](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/15.md)
 
 
 ## Exercícios e trabalhos
