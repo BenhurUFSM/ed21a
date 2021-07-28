@@ -45,6 +45,7 @@ Encontros realizados com uso do discord, nos horários oficiais da disciplina.
 |   17 |  19jul | [grafos](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/17.md)
 |   18 |  21jul | [grafos, cont](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/17.md)
 |   19 |  26jul | [grafos, cont](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/17.md)
+|   20 |  28jul | [grafos, cont; fila de prioridade](https://github.com/BenhurUFSM/ed21a/blob/main/Assuntos/20.md)
 
 ## Exercícios e trabalhos
 
