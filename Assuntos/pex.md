@@ -164,3 +164,44 @@ Uma possível função principal, para testar as funções está abaixo. Ela dev
      return 0;
    }
 ```
+
+* * *
+
+### Possível solução
+
+```c
+   sequencia *maior_sequencia(no *arv)
+   {
+     // árvore vazia não tem a sequência
+     if (arv == NULL) return NULL;
+     
+     // chuta que a maior sequência esteja na raiz
+     sequencia *m = arv->seq;
+     // se o filho esquerdo tiver uma sequência e for maior, usa ela como maior
+     sequencia *me = maior_sequencia(arv->esq);
+     if (me != NULL && compara_sequencias(m, me) == 2) m = me;
+     // se o filho direito tiver uma maior ainda, então é ela
+     sequencia *md = maior_sequencia(arv->dir);
+     if (md != NULL && compara_sequencias(m, md) == 2) m = md;
+
+     // returna a maior que encontrou
+     return m;
+   }
+   
+   int profundidade_sequencia(no *arv, sequencia *seq)
+   {
+     // árvore vazia não tem a sequência
+     if (arv == NULL) return -1;
+     // se a sequência estiver neste nó, está na profundidade 0 desta subárvore
+     if (compara_sequencias(seq, arv->seq) == 0) return 0;
+     // se a sequência estiver na subárvore esquerda, está em prof 1 a mais que nela
+     int pe = profundidade_sequencia(arv->esq, seq);
+     if (pe != -1) return pe+1;
+     // não tá na esquerda, faz o mesmo na direita
+     int pd = profundidade_sequencia(arv->dir, seq);
+     if (pd != -1) return pd+1;
+     // não tá em lugar nenhum :(
+     return -1;
+   }
+
+```
